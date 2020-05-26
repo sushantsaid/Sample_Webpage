@@ -6,52 +6,53 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>MiniGuru</title>
 </head>
 
 <body>
-    <div style="background-color: #403a3a;">
+    <div>
         <header>
-            <div class="jumbotron">
-                <nav class="navbar navbar-expand-md navbar-dark ">
-                    <a class="navbar-brand" href='#'>
-                        <h2 style="color: aliceblue;">Compitron</h2>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse " id="navbarContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href='#home'>
-                                    <h4 style="color: aliceblue;">Menu</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#products">
-                                    <h4 style="color: aliceblue;">Cart</h4>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contactus">
-                                    <h4 style="color: aliceblue;">Contact Us</h4>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <!-- <div class="jumbotron"> -->
+            <nav class="navbar navbar-expand-md navbar-dark ">
+                <a class="navbar-brand" href='#'>
+                    <h2 style="color: aliceblue;">Compitron</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href='#home'>
+                                <h4 style="color: aliceblue;">Menu</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">
+                                <h4 style="color: aliceblue;">Cart</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">
+                                <h4 style="color: aliceblue;">Contact Us</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- </div> -->
         </header>
-        <Main>
+        <Main style="background-color: rgb(56, 53, 53);">
             <div class='container'>
                 <!-- ROW 1 -->
                 <div class="row">
                     <div class="col-12">
-                        <center>
+                        <div class="text-center" style="margin-top: 50px;">
                             <h1>!! Featured !!</h1>
-                        </center>
+                        </div>
                     </div>
                 </div>
                 <!-- /ROW 1 -->
@@ -60,23 +61,23 @@
                 <!-- ROW 2 -->
                 <div class="row">
                     <div class="col-md-4">
-                        <center>
+                        <div class="text-center">
                             <img src="./assets/images/vadonut.png" width="300" height="300" class="imageContainer" />
                             <h2>Vadonut</h2>
-                        </center>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <center>
+                        <div class="text-center">
                             <img src="./assets/images/elaicheesecake.png" width="300" height="300"
                                 class="imageContainer" />
                             <h2>Elaicheesecake</h2>
-                        </center>
+                        </div>
                     </div>
                     <div class="col-md-4">
-                        <center>
+                        <div class="text-center">
                             <img src="./assets/images/uthappizza.png" width="300" height="300" class="imageContainer" />
                             <h2>Pizza</h2>
-                        </center>
+                        </div>
                     </div>
                 </div>
                 <!-- /ROW 2 -->
@@ -87,17 +88,22 @@
                 <div class="row">
                     <!-- <div style="margin-top: 30px;margin-bottom: 30px;"> -->
                     <div class="col-md-6">
-                        <div class="card" style="width: 400px">
-                            <center>
+                        <div class="text-center">
+                            <div class="card card-style">
                                 <img src="./assets/images/buffet.png" width="380" height="380"
-                                    class="cardImageContainer rounded" />
-                            </center>
-                            <div class="card-body">
-                                <h2 class="card-title">Buffet</h2>
-                                <h4 class="card-subtitle">Enjoy some tasty food!</h4>
-                                <a class="card-link" href="#">Add to cart</a>
+                                    class="cardImageContainer ">
+                                <div class="overlay">
+                                    <i class=" fa fa-heart fa-lg"></i>
+                                </div>
+
+                                <div class="card-body">
+                                    <h3 class="card-title">Buffet</h3>
+                                    <h4 class="card-subtitle">Enjoy some tasty food!</h4>
+                                    <a class="card-link" href="#">Add to cart<i class="fa fa-arrow-right ml-2"></i></a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-md-6">
                         <div class="carouselContainer">
@@ -110,18 +116,27 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <img src="./assets/images/zucchipakoda.png" class="d-block w-100" />
-                                        <div class="carousel-caption">Delicious Pakoda</div>
+                                        <div class="carousel-caption">
+                                            <h4 class="carouselCaption">Delicious Pakoda</h4>
+                                        </div>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="./assets/images/uthappizza.png" class="d-block w-100" />
+                                        <div class="carousel-caption">
+                                            <h4 class="carouselCaption">Pizza</h4>
+                                        </div>
                                     </div>
                                     <div class="carousel-item">
                                         <img src="./assets/images/elaicheesecake.png" class="d-block w-100" />
+                                        <div class="carousel-caption">
+                                            <h4 class="carouselCaption">Elaicheesecake</h4>
+                                        </div>
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselControl" data-slide="prev"
                                     role="button">
                                     <span class="carousel-control-prev-icon"></span>
+
                                 </a>
                                 <a class="carousel-control-next" href="#carouselControl" data-slide="next"
                                     role="button">
@@ -138,7 +153,7 @@
         <footer>
             <div class="footer">
                 <a href="#">abc@gmail.com</a>
-                <br/>
+                <br />
                 <h4 style="color: aliceblue;">+91 1234567891</h4>
             </div>
         </footer>
@@ -154,10 +169,10 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 
-    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    <!-- <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

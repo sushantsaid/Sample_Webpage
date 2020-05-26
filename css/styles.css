@@ -4,7 +4,7 @@
     margin: 10px;
 }
 
-header .jumbotron{
+header {
     border-radius: 0px !important;
     background-color: rgb(33, 34, 34);
 }
@@ -13,10 +13,16 @@ header .jumbotron{
 .cardImageContainer{
     border: 1px solid rgb(201, 197, 197);
     margin: 10px;
+    border-radius: 12px;
 }
 
-center h2,h1{
+.text-center h2,h1{
     color: honeydew;
+}
+
+.card-body h3,h4{
+    color: white;
+    margin: 10px;
 }
 
 .line-separator{
@@ -24,9 +30,10 @@ center h2,h1{
 }
 
 .carouselContainer{
-    margin: 10px;
-    padding: 25px;
-    background-color: lavender;
+    margin:20px auto;
+    padding: 15px;
+    background-color: rgb(33, 34, 34);
+    border-radius: 5px;
 }
 
 .carousel-indicators li{
@@ -35,6 +42,45 @@ center h2,h1{
 
 .footer{
     background-color: rgb(33, 34, 34);
-    margin-top: 30px;
-    padding: 30px;
+    padding: 10px;
 }
+
+.carouselCaption{
+    color: chartreuse;
+}
+
+
+
+.card-style{
+    width: 400px;
+    border-radius: 12px;
+    margin: 20px auto;  
+    background-color: rgb(33, 34, 34);  
+}
+
+.fa-heart{
+    color: crimson;
+}
+
+.overlay {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 160px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    transition: .3s ease;
+    
+  }
+
+  .card-link:hover{
+      animation: shift 2s ;
+  }
+
+  @keyframes shift{
+      from{color: cyan;}
+      to{color:yellow ;
+}
+  }
